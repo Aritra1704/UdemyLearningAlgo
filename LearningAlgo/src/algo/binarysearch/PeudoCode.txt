@@ -1,0 +1,31 @@
+Procedure: BINARY SEARCH(a,x)
+
+Inputs:
+	a: the array to search in
+	x: the value we are searching for in a 
+	
+Outputs:
+	The index position where a[i] = x or -1 if not found.
+	
+1) Set p to 0, and set r to n.
+2) While p<=r, do the following:
+	a. Set q to [(p + r) / 2 ]
+	b. if A[q] == x, then return q.
+	c. if A[q] > x, then set r to q - 1
+		else set p to q + 1. 
+3) Return -1.
+
+Big O notation:  O(log n)
+
+
+Procedure RECURSIVE BINARY SEARCH(A, p, r, x):
+Inputs: A and x are the same as above, p and r represents the subarray A[p..r] under consideration.
+Outputs: Same as above
+
+1) If p > r, return -1.
+2) Else: 
+	a. Set q to [(p + r)/2]
+	b. If A[q] == x, then return q.
+	c. else if A[q] > x
+		then return RECURSIVE BINARY SEARCH(A, p, q-1, x)
+	d. else return RECURSIVE BINARY SEARCH(A, q+1, r, x)
