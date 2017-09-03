@@ -1,0 +1,16 @@
+Procedure LINEAR SEARCH(a,x):
+
+Inputs:
+	A: the array to be sorted 
+	
+Outputs:
+	A sorted in ascending order
+	
+1) for i = 1 to A.length -1
+	A) Set element to A[i], and set j to i - 1.
+	B) while j >= 0 and A[j] > element
+		a) set A[j + 1] to A[j]
+		b) decrement j by 1 
+	C) set A[j + 1] to element
+
+Big O notation: O(n^2).

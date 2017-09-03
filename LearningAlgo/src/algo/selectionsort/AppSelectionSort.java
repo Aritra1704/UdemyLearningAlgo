@@ -15,7 +15,7 @@ public class AppSelectionSort {
 		for(int i = 0; i < o.length; i++) {
 			minimum = i;
 			for(int j = i + 1; j < o.length; j++) {
-				if(o[j] < o[minimum])
+				if(o[j] < o[minimum])//if we find a smaller value 
 					minimum = j;
 			}
 			if(minimum != i)
