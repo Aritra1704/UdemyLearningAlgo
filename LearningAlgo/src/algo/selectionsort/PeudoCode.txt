@@ -1,0 +1,16 @@
+Procedure LINEAR SEARCH(a,x):
+
+Inputs:
+	A: the array to be sorted 
+	
+Outputs:
+	A sorted in ascending order
+	
+1) for i = 0 to A.length -1
+	A) Set minimum to i.
+	B) for j = i + 1, to A.lenth:
+		a) if A[j] < A[minimum] 
+			i. then set minimum to j
+	C) Swap A[i] with A[minimum]
+
+Big O notation: O(n^2).
