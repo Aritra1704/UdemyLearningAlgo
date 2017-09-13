@@ -1,0 +1,19 @@
+Procedure LINEAR SEARCH(a,x):
+
+Inputs:
+	A: the array to be sorted 
+	
+Outputs:
+	A sorted in ascending order
+	
+mergeSort(A, p, r) {
+
+	if(p < r) {
+		q = (p + r)/2
+		mergeSort(A, p, q)
+		mergeSort(A, q + 1, r)
+		merge(A, p, q, r)
+	}
+}
+
+Big O notation: O(n^2).
