@@ -16,4 +16,4 @@ mergeSort(A, p, r) {
 	}
 }
 
-Big O notation: O(n^2).
+Big O notation: O(nlogn).
