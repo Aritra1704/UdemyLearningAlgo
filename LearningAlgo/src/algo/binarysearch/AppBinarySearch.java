@@ -4,7 +4,7 @@ public class AppBinarySearch {
 
 	public static void main(String[] args) {
 		int[] arr = {1,2,3,4,5,6,7,8,9,10};
-		int value = 52;
+		int value = 2;
 		int position = binarySearchRecur(arr, value, 0, (arr.length - 1));
 //		int position = binarySearch(arr, value);
 		
@@ -12,6 +12,10 @@ public class AppBinarySearch {
 			System.out.println("Value is located at: " + (position + 1));
 		else
 			System.out.println("Value not found.");
+		
+//		String str = "test string";
+//		str = new StringBuilder(str).reverse().toString();
+//		System.out.println(str);
 	}
 	
 	private static int binarySearch(int[] arr, int value) {
