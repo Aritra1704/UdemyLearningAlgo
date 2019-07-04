@@ -1,4 +1,4 @@
-package dynamicprog;
+package greedyalgo;
 
 /*
  * "Imagine you have a collection of N wines placed next to each other on a shelf. For simplicity, 
@@ -48,7 +48,7 @@ public class GreedyWineCellar {
 	 * 
 	 */
 		
-		return max(
+		return Math.max(
 				profit(begin + 1, end) + year * p[begin],
 				profit(begin, end - 1) + year * p[end]);
 	}
