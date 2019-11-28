@@ -64,10 +64,10 @@ public class MotuPatluIcecream {
 	
 	private static void compete(int numofIcecreams) {
 		int indexMotu = 0, indexPatlu = arrInputs.size() - 1;
-		int countMotu = 0, countPatlu = 0;
+		int countMotu = 1, countPatlu = 1;
 		int motu = speedofMotu(indexMotu);
 		int patlu = speedofPatlu(indexPatlu);
-		while(indexMotu < indexPatlu) {
+		while(indexMotu < (indexPatlu - 1)) {
 			if(motu < patlu) {
 				countMotu++;
 				indexMotu++;
@@ -95,7 +95,10 @@ public class MotuPatluIcecream {
 	}
 	
 	private static int speedofMotu(int indexMotu) {
-		return (int) Math.ceil((arrInputs.get(indexMotu))/2);
+		int motuNextIcecream = arrInputs.get(indexMotu);
+		if(motuNextIcecream % 2 != 0)
+			motuNextIcecream++;
+		return motuNextIcecream/2;
 	}
 	
 	private static int speedofPatlu(int indexPatlu) {
